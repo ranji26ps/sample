@@ -1,8 +1,10 @@
-str = input("enter any string")
-dict= {}
-for i in str:
-    if i in dict:
-       dict[i]+=1
+str_input = input("Enter any string: ")
+char_count = {}
+
+for char in str_input:
+    if char in char_count:
+        char_count[char] += 1
     else:
-        dict[i]=1
-    print("count of all characters in entered string is:",dict) 
+        char_count[char] = 1
+
+print("Count of all characters in the entered string is:", char_count)
